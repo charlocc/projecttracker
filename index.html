@@ -34,8 +34,8 @@
 
 
 
-      <section>
-        <div class="card" style="width: 24rem;">
+      <section class="col-12 col-md-4 col-xl-4">
+        <div class="card">
           <div class="card-header bg-dark text-white">
             Intructions
           </div>
@@ -45,8 +45,25 @@
             <li class="list-group-item border-start border-end border-dark">Project Type</li>
             <li class="list-group-item border-start border-end border-dark">Due Date</li>
             <li class="list-group-item border-start border-end border-dark">Hourly Rate</li>
-            <li class="bg-dark text-white"><a href="#" class="btn btn-primary m-2">Go somewhere</a></li>
+            <li class="bg-dark text-white"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</button></li>
           </ul>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
